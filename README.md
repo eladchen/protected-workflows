@@ -1,16 +1,6 @@
 # Protected Workflows
 Protected Workflows is a [Github application](https://github.com/apps/protected-workflows). Its goal is to cancel [unauthorized](#when-is-a-workflow-run-unauthorized) workflow runs.
 
-## Caveat:
-> **Github has what I believe to be a bug in their design**:  
-> Anyone with push access to a repository may rerun workflow jobs, which may be ok, except for the fact  
-> that such events will not be relayed to this application.
->
-> In other words, the above means that Protected-Workflows is unable to cancel unauthorized workflow runs when a workflow is reran.
->
-> This bug has been reported to Github, and until it is addressed, its best to rely on this application
-> to authorize pull requests (using the "pull_request" / "pull_request_target" events)
-
 ## Table of Contents
 * [What Is the Purpose of This Repository](#what-is-the-purpose-of-this-repository)
 * [Features](#features)
